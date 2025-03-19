@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+<body>
+    <script>
+        /*Problema
+        const aluno1 = "João";
+        const aluno2 = "Arthur";
+        const aluno3 = "Pradela";
+ 
+        document.write(aluno1 + "<br>");
+        document.write(aluno2 + "<br>");
+        document.write(aluno3 + "<br>");
+        */
+ 
+        //Arrays
+        //const alunos = [1º nome, 2º nome, 3º nome...]
+        //const alunos = [ 0  ,      1   ,      2    ,     3   ....]
+ 
+        const alunos = ["João", " Arthur", " Pradela", " Bruna L", " Bruna T", " Bruna V", " Cauã",
+            " Daniel", " Davi",];
+ 
+ 
+ 
+        //Acrescentar um nome ao final do arrays
+        //const alunos = ["João", " Arthur", " Pradela", " Bruna L", " Bruna T", " Bruna V", " Cauã",
+        // " Daniel", " Davi", "Gabriel"];
+ 
+ 
+        let adicionar = prompt("Você deseja adicionar um nome a lista de alunos? (s/n)");
+       
+        if (adicionar == "s"){
+            let pergunta = prompt("Qual nome você deseja adicionar a essa lista?");
+            alunos.push(pergunta);
+        }else{
+            alert("Lista de Alunos:");
+        }
+ 
+ 
+ 
+        while (resposta == "s") {
+            let nome = prompt("Digite o nome do aluno:");
+            if (nome) alunos.push(nome);  // Adiciona o nome diretamente dentro da condição
+            resposta = prompt("Deseja adicionar mais um nome? (s/n)");
+        }
+        if (adicionar == "n") {
+            document.write("Lista de Alunos:");
+            for (let indice = 0; indice < alunos.length; indice++) {
+                document.write(alunos[indice] + "<br>");
+            }
+        }
+    </script>
+</body>
+</html>
